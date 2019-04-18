@@ -136,6 +136,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+       btn_Mul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Value1 = Float.parseFloat(ed1.getText() + "");
+                mMultiplication = true ;
+                ed1.setText(null);
+            }
+        });
+
+        btn_Div.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Value1 = Float.parseFloat(ed1.getText()+"");
+                mDivision = true ;
+                ed1.setText(null);
+            }
+        });
 
         btn_calc.setOnClickListener(new View.OnClickListener() {
             @Override
